@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="candidate.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,12 +25,35 @@
 	<link rel="apple-touch-icon" size="114x114" href="">
 </head>
 <body>
-	<h1>Chicken Monkey Code</h1>
-	<ul id="ChickenMonkey">
-		<li>test</li>
+	<h1>Your Representative is:</h1>
+	<h1 id="candidateName"></h1>
+	<div id="edit">
+		<form>
+			<button type="submit" name="Edit Name" onclick="changeCandidateName()">Edit Name</button>
+		</form>
+	</div>
+	<h2>Congressional District: <span id="congressionalDistrict"></span></h2>
+
+
+	<section id="platformSection" class="platform">
+	<h3>Platform Statements</h3>
+	<ul id="platformStatements">
 	</ul>
+	<div id="edit">
+			<form>
+				<input id="newPlatformIssue" type="text" value="Issue">
+				<input id="newPlatformPosition" type="text" value="Position on Issue">
+				<button type="submit" name="Edit Name" onclick="addPlatform()">Add Platform</button>
+			</form>
+		</div>
+	</section>
+
+
+	<section id="gallery" class="photoGallery">
+
+	</section>
 	<!-- Javascript -->
-	<script src="app.js"></script>
+	<script src="campaign.js"></script>
 
 </body>
 </html>

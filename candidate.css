@@ -1,0 +1,17 @@
+#candidateName {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+}
+
+#platformStatements {
+    color: purple;
+}
+
+.platform {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
+
+.platformTitle {
+    font-weight: bolder;
+}
