@@ -1,7 +1,7 @@
 
 let candidate = {
     name: "Elizabeth Sanger",
-    district: 5,
+    district: 6,
     platformStatements: {
         taxes: "hates them",
         jobs: "loves jobs",
@@ -68,8 +68,8 @@ function populatePage() {
 
     platformStatementPop()
 
-    // let platformStatementCategories = Object.getOwnPropertyNames(candidate.platformStatements);
-    // console.log(platformStatementCategories);
+    let platformStatementCategories = Object.getOwnPropertyNames(candidate.platformStatements);
+    console.log(platformStatementCategories);
 
     let imageGalleryNames = Object.getOwnPropertyNames(candidate.imageGallery);
     console.log(imageGalleryNames);

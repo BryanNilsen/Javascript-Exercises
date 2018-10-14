@@ -15,3 +15,9 @@
 .platformTitle {
     font-weight: bolder;
 }
+
+#congressionalDistrict {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: orange;
+    font-weight: bolder;
+}
