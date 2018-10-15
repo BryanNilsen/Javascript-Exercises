@@ -4,9 +4,6 @@ Write a program that prints the numbers from 1 to 100. But for multiples of five
 To determine if a number can be evenly divided by 5 or 7, use the JavaScript remainder operator. */
 
 let chickenMonkeyList = document.getElementById("chickenMonkey");
-
-// document.createElement('p');
-
 let text = ``;
 
 function listCM () {
@@ -31,5 +28,4 @@ for (var i = 1; i <= 100; i++){
     text = `${i}`;
     listCM(); 
   }
-
 };

@@ -8,7 +8,7 @@ let newBandNumber = bandNumber;
 const takeNumber = function (bandName) {
     event.preventDefault();
     let newBandName = document.getElementById("bandName").value;
-    console.log("New band: ", `${newBandNumber}. ${newBandName}`);
+    // console.log("New band: ", `${newBandNumber}. ${newBandName}`);
 
     // the following will create a new paragraph element with the new band name and number
     let newBandList = document.createElement('p');

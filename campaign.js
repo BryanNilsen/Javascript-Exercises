@@ -1,4 +1,4 @@
-
+// CANDIDATE Object Information
 let candidate = {
     name: "Elizabeth Sanger",
     district: 6,
@@ -59,8 +59,6 @@ function platformStatementPop () {
 }
 
 
-
-
 // this function will populate the page with the info from the candidate variable
 function populatePage() {
     document.getElementById("candidateName").innerHTML = candidate.name;
@@ -106,7 +104,6 @@ function addPlatform () {
     let newPlatformArray = [newPlatformIssue, newPlatformPosition]
     platformObjects.push(newPlatformArray);
     
-    // console.log("The platform objects now are: ", platformObjects);
 
     // create list element
     let newListItem = document.createElement('li');
@@ -115,4 +112,3 @@ function addPlatform () {
     platformList.appendChild(newListItem);   
 
 }
-
