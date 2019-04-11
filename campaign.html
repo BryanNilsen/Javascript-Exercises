@@ -1,47 +1,52 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Campaign Challenge</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <meta charset="utf-8">
+  <title>Campaign Challenge</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="campaign.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="campaign.css">
 
 </head>
+
 <body>
-	<h1>Your Representative is:</h1>
-	<h1 id="candidateName"></h1>
-	<div id="edit">
-		<form>
-			<button type="submit" name="Edit Name" onclick="changeCandidateName()">Edit Name</button>
-		</form>
-	</div>
-	<h2>Congressional District: <span id="congressionalDistrict"></span></h2>
+
+  <article>
+    <h1>Your Representative is:</h1>
+    <h1 id="candidateName"></h1>
+    <div id="edit">
+      <!-- form to edit Representative's name -->
+      <form>
+        <button type="submit" name="Edit Name" onclick="changeCandidateName()">Edit Name</button>
+      </form>
+    </div>
+  </article>
+
+  <h2>Congressional District: <span id="congressionalDistrict"></span></h2>
+
+  <section id="platformSection" class="platform">
+    <h3>Platform Statements</h3>
+    <ul id="platformStatements">
+    </ul>
+    <div id="edit">
+      <form>
+        <input id="newPlatformIssue" type="text" value="Issue">
+        <input id="newPlatformPosition" type="text" value="Position on Issue">
+        <button type="submit" name="Edit Name" onclick="addPlatform()">Add Platform</button>
+      </form>
+    </div>
+  </section>
 
 
-	<section id="platformSection" class="platform">
-	<h3>Platform Statements</h3>
-	<ul id="platformStatements">
-	</ul>
-	<div id="edit">
-			<form>
-				<input id="newPlatformIssue" type="text" value="Issue">
-				<input id="newPlatformPosition" type="text" value="Position on Issue">
-				<button type="submit" name="Edit Name" onclick="addPlatform()">Add Platform</button>
-			</form>
-		</div>
-	</section>
+  <section id="gallery" class="photoGallery">
 
-
-	<section id="gallery" class="photoGallery">
-
-	</section>
-	<!-- Javascript -->
-	<script src="campaign.js"></script>
+  </section>
+  <!-- Javascript -->
+  <script src="campaign.js"></script>
 
 </body>
+
 </html>
