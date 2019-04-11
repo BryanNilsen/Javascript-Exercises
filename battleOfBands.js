@@ -5,18 +5,16 @@
 const bandNumber = 1;
 let newBandNumber = bandNumber;
 
-const takeNumber = function (bandName) {
-    event.preventDefault();
-    let newBandName = document.getElementById("bandName").value;
-    // console.log("New band: ", `${newBandNumber}. ${newBandName}`);
+const takeNumber = function() {
+  event.preventDefault();
+  let newBandName = document.getElementById("bandName").value;
+  // console.log("New band: ", `${newBandNumber}. ${newBandName}`);
 
-    // the following will create a new paragraph element with the new band name and number
-    let newBandList = document.createElement('p');
-    newBandList.innerHTML = `${newBandNumber}. ${newBandName}`;
-    // bandNames is the ID of the div tag in the HTML
-    bandNames.appendChild(newBandList); 
-    // the following increments the band number
-    newBandNumber ++;
-}
-
-
+  // the following will create a new paragraph element with the new band name and number
+  let newBandList = document.createElement("p");
+  newBandList.innerHTML = `${newBandNumber}. ${newBandName}`;
+  // bandNames is the ID of the div tag in the HTML
+  bandNames.appendChild(newBandList);
+  // the following increments the band number
+  newBandNumber++;
+};
