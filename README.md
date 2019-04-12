@@ -26,3 +26,7 @@ The function accepts the following two arguments which will dictate the result o
 - number of increments
 
 The specified arguments will also appear in the text prior preceding the incremented output.
+
+## Fibonacci Sequence
+
+I created a function that accepts a number from the user and returns the integer in that place within the Fibonacci Sequence.
