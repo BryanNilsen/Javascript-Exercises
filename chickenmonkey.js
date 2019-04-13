@@ -6,16 +6,16 @@ To determine if a number can be evenly divided by 5 or 7, use the JavaScript rem
 let chickenMonkeyList = document.getElementById("chickenMonkey");
 let text = ``;
 
-function listCM () {
-  let newListItem = document.createElement('li');
+function listCM() {
+  let newListItem = document.createElement("li");
   newListItem.innerHTML = `${text}`;
   chickenMonkeyList = newListItem;
-  chickenMonkey.appendChild(chickenMonkeyList); 
-  console.log(`${text}`);
+  chickenMonkey.appendChild(chickenMonkeyList);
+  console.log(text);
 }
 
-for (var i = 1; i <= 100; i++){
-  if (i % 5 === 0 && i % 7 === 0){
+for (var i = 1; i <= 100; i++) {
+  if (i % 5 === 0 && i % 7 === 0) {
     text = `ChickenMonkey`;
     listCM();
   } else if (i % 7 === 0) {
@@ -26,6 +26,6 @@ for (var i = 1; i <= 100; i++){
     listCM();
   } else {
     text = `${i}`;
-    listCM(); 
+    listCM();
   }
-};
+}
