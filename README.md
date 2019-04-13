@@ -35,4 +35,8 @@ I created a function that accepts a number from the user and returns the integer
 
 ## Overly Excited
 
-This is a function that takes
+This is a function that takes an array and places an exclamation after every third word.
+
+## Tree
+
+This function creates a depiction of a pine tree out of a specified character in the Chrome dev tools console.
