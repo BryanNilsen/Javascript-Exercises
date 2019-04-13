@@ -8,6 +8,8 @@ The index page contains links to each individual challenge or exercise. Each exe
 
 ## Battle of the Bands
 
+I developed a function to accept a band name from a text input and assign it a number. Starting with 1, each band name entered will be assigned the next incremented number.
+
 ## Campaign
 
 ## ChickenMonkey (aka FizzBuzz)
@@ -30,3 +32,11 @@ The specified arguments will also appear in the text prior preceding the increme
 ## Fibonacci Sequence
 
 I created a function that accepts a number from the user and returns the integer in that place within the Fibonacci Sequence.
+
+## Overly Excited
+
+This is a function that takes an array and places an exclamation after every third word.
+
+## Tree
+
+This function creates a depiction of a pine tree out of a specified character in the Chrome dev tools console.
