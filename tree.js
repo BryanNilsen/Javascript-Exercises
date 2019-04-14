@@ -1,6 +1,4 @@
 // Instructions
-// It is absolutely critical that you read each of these requirements because as a professional you will be expected to completely understand what you are expected to do. If you submit code that does not fulfill the requirements, you will be sent to your room with no dinner.
-
 // Create a tree function that should build a pine tree out of a character in the Chrome dev tools console.
 
 // It accepts a single object as an argument. The object should have two key/value pairs.
@@ -12,30 +10,68 @@
 
 // If either of the input fields does not have a value in it when the user presses the enter key, or presses the button, then display an alert stating that both fields must have a value.
 
-// Grow your tree
-
+// TREE OBJECT
 treeObject = {
-  num: 25,
-  char: "B"
+  lines: "",
+  character: ""
 };
 
+// MAKE TREE OBJECT FROM INPUTS
+function makeTreeObject() {
+  treeObject.lines = document.getElementById("lines").value;
+  treeObject.character = document.getElementById("character").value;
+}
+
+// ADD EVENT LISTENER TO BUTTON - check for completed inputs
+document.getElementById("button").addEventListener("click", function() {
+  makeTreeObject();
+  if (treeObject.lines === "" || treeObject.character === "") {
+    alert("both fields must have a value");
+  } else {
+    makeTree(treeObject);
+  }
+});
+
+// ADD EVENT LISTENER TO LINES INPUT ON 'ENTER' - check for completed inputs
+document.getElementById("lines").addEventListener("keypress", function(e) {
+  var key = e.which || e.keyCode;
+  if (key === 13) {
+    makeTreeObject();
+    if (treeObject.lines === "" || treeObject.character === "") {
+      alert("both fields must have a value");
+    } else {
+      makeTree(treeObject);
+    }
+  }
+});
+
+// ADD EVENT LISTENER TO CHARACTER INPUT ON 'ENTER' - check for completed inputs
+document.getElementById("character").addEventListener("keypress", function(e) {
+  var key = e.which || e.keyCode;
+  if (key === 13) {
+    makeTreeObject();
+    if (treeObject.lines === "" || treeObject.character === "") {
+      alert("both fields must have a value");
+    } else {
+      makeTree(treeObject);
+    }
+  }
+});
+
+// MAKE TREE IN CONSOLE
 function makeTree(object) {
-  const num = object.num;
-  const character = object.char;
-
-  console.log(`your number was ${num}, and the character was ${character}`);
-
-  treeStringArray = [];
-  for (i = 0; i <= num; i++) {
-    treeString = "";
-    for (j = 0; j < num - i; j++) {
+  console.clear();
+  console.log(
+    `your number was ${object.lines}, and the character was ${object.character}`
+  );
+  for (i = 0; i <= object.lines; i++) {
+    let treeString = "";
+    for (j = 0; j < object.lines - i; j++) {
       treeString += " ";
     }
     for (k = 0; k < i * 2 - 1; k++) {
-      treeString += `${character}`;
+      treeString += `${object.character}`;
     }
     console.log(treeString);
   }
 }
-
-makeTree(treeObject);
