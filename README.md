@@ -35,8 +35,14 @@ I created a function that accepts a number from the user and returns the integer
 
 ## Overly Excited
 
-This is a function that takes an array and places an exclamation after every third word.
+These are a functions that take word arrays and builds a sentence one word at a time in the console. Additional functionality is added to place some form of exclamation character after every third word.
+
+- iterating over arrays using for loops and conditionals
 
 ## Tree
 
 This function creates a depiction of a pine tree out of a specified character in the Chrome dev tools console.
+
+- nested for loops
+- event listeners
+- slice and join methods

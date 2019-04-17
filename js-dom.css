@@ -1,0 +1,23 @@
+body {
+  background: greenyellow;
+}
+
+.student {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: purple;
+  color: whitesmoke;
+}
+
+.passing {
+  color: green;
+}
+
+.failing {
+  color: orange;
+}
+
+.xx-large {
+  font-size: 3em;
+}

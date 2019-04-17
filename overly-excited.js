@@ -48,4 +48,23 @@ const addExcitementFatArrow = (theWordArray, excitement) => {
   }
 };
 
-addExcitementFatArrow(sentence, "%%");
+addExcitementFatArrow(sentence, "%");
+
+const addEvenMoreExcitement = (theWordArray, number, character) => {
+  let buildMeUp = "";
+  let excitement = "";
+  for (let i = 0; i < number; i++) {
+    excitement += character;
+  }
+
+  for (let i = 0; i < theWordArray.length; i++) {
+    if ((i + 1) % 3 === 0) {
+      buildMeUp += `${theWordArray[i]} ${excitement} `;
+    } else {
+      buildMeUp += `${theWordArray[i]} `;
+    }
+    console.log(buildMeUp);
+  }
+};
+
+addEvenMoreExcitement(sentence, 3, "^");
